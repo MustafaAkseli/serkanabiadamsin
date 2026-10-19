@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#101310">
+  <meta name="description" content="Serkan Abi'ye küçük bir sürpriz. İyi ki doğdun, iyi ki varsın.">
+  <title>İyi ki doğdun, Serkan Abi ✳</title>
+  <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script>
+    document.documentElement.classList.add('js');
+    window.setTimeout(function () {
+      if (!window.birthdayReady) document.documentElement.classList.remove('js');
+    }, 8000);
+  </script>
+  <script defer src="./content.js"></script>
+  <script defer src="./audio.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body data-screen="boot">
+  <a class="skip-link" href="#main">İçeriğe geç</a>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <symbol id="spark" viewBox="0 0 32 32"><path d="M16 0l3.6 12.4L32 16l-12.4 3.6L16 32l-3.6-12.4L0 16l12.4-3.6z" fill="currentColor"/></symbol>
+      <symbol id="arrow" viewBox="0 0 24 24"><path d="M5 12h14m-6-6 6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="site-header">
+    <span class="brand" aria-label="Serkan.exe">
+      <svg aria-hidden="true"><use href="#spark"/></svg><span>serkan<span class="brand-dot">.</span>exe</span>
+    </span>
+    <span class="edition">BIRTHDAY EDITION / 001</span>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="intro" id="intro" aria-labelledby="intro-title">
+      <div class="intro-halo" aria-hidden="true"></div>
+      <div class="intro-heading">
+        <h1 id="intro-title">Sıradan bir mesaj.<br><em>Pek Mıstık'a göre değil.</em></h1>
+        <p>Biraz kod, biraz müzik. Gerisi sana sürpriz, abi.</p>
+      </div>
+      <div class="terminal" aria-label="Doğum günü terminali">
+        <div class="terminal-chrome">
+          <div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+          <span>kardesin@localhost: ~</span><span class="terminal-shell">zsh</span>
+        </div>
+        <div class="terminal-body" aria-hidden="true">
+          <p class="terminal-path">~/iyi-ki-varsin <span>on</span> <b>main</b> <span>✳</span></p>
+          <p class="command"><span class="prompt">❯</span> <span id="typed-command"></span><span id="cursor" class="cursor">▍</span></p>
+          <div class="terminal-output" id="terminal-output">
+            <p data-log><span class="log-time">[init]</span> birthday protocol <span class="log-dim">v1.0.0</span></p>
+            <p data-log><span class="log-time">[scan]</span> <span id="terminal-name">Serkan Abi</span> bulundu. <span class="log-good">✓</span></p>
+            <p data-log><span class="log-time">[check]</span> CS mezunu <span class="log-dim">········</span> <span class="log-good">OK</span></p>
+            <p data-log><span class="log-time">[check]</span> Abi gibi abi <span class="log-dim">······</span> <span class="log-good">OK</span></p>
+            <p data-log><span class="log-time">[load]</span> İyi ki'ler yükleniyor <span class="log-good">100%</span></p>
+            <p data-log class="terminal-success"><span aria-hidden="true">↳</span> Her şey hazır. Bu gece senin, abi.</p>
+          </div>
+        </div>
+        <div class="terminal-status"><span><span class="status-dot"></span> <span id="boot-status">Sürpriz hazırlanıyor…</span></span><span>UTF-8</span></div>
+      </div>
+      <div class="launch-area">
+        <button class="button button-lime" id="launch" type="button" disabled><span id="launch-label">Sürpriz hazırlanıyor…</span><svg aria-hidden="true"><use href="#arrow"/></svg></button>
+        <p class="launch-hint"><span class="keyboard-hint">veya <kbd>enter ↵</kbd> <span aria-hidden="true">·</span> </span>Müzik bu dokunuşla başlar.</p>
+        <p class="intro-safety">Yumuşak ışıklar, iyi hisler. Birazdan bu gece senin.</p>
+      </div>
+      <p class="intro-footer">COMPILED WITH <span aria-label="sevgi">♥</span> BY KARDEŞİN</p>
+    </section>
+
+    <div class="celebration" id="celebration">
+      <section class="hero" aria-labelledby="birthday-title">
+        <div class="stage-lights" aria-hidden="true"><div class="light light-lime"></div><div class="light light-pink"></div><div class="light light-blue"></div></div>
+        <div class="hero-copy">
+          <span class="eyebrow hero-eyebrow"><span class="status-dot"></span> BUGÜNÜN HEADLINER'I</span>
+          <h1 id="birthday-title" tabindex="-1">İyi ki doğdun,<br><span data-content="name">Serkan Abi.</span></h1>
+          <p class="hero-subtitle" data-content="tagline">Yeni yaş. Aynı efsane.</p>
+        </div>
+        <div class="portrait-stage">
+          <div class="vinyl-decoration" aria-hidden="true"><div class="vinyl"><div class="vinyl-label"><svg><use href="#spark"/></svg></div></div><span>ONLY GOOD VIBES<br>SINCE DAY ONE</span></div>
+          <div class="portrait-wrap">
+            <div class="portrait-frame">
+              <img id="portrait" src="./assets/serkan.jpg" alt="Serkan Abi gülümseyerek başparmağını kaldırıyor" width="1400" height="1400" fetchpriority="high">
+              <span class="portrait-caption" id="portrait-caption" hidden></span>
+            </div>
+            <svg class="portrait-spark spark-one" aria-hidden="true"><use href="#spark"/></svg>
+            <svg class="portrait-spark spark-two" aria-hidden="true"><use href="#spark"/></svg>
+            <span class="portrait-sticker">abi gibi abi<span aria-hidden="true">↗</span></span>
+            <span class="edition-sticker" aria-hidden="true">ONE OF<br><b>A KIND.</b></span>
+          </div>
+          <div class="side-note" aria-hidden="true"><span>another year.<br>another level.</span><svg viewBox="0 0 100 100"><path d="M80 8C94 53 60 76 15 72m0 0 17-13M15 72l19 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        </div>
+        <div class="hero-bottom">
+          <div class="radio-badge"><span class="equalizer" aria-hidden="true"><i></i><i></i><i></i><i></i></span><div><strong>BIRTHDAY FM</strong><span id="track-label">ORIGINAL HOUSE LOOP · 120 BPM</span></div></div>
+          <a class="note-link" href="#letter" aria-label="Sana bir notum var">
+            <span class="note-link-copy"><small aria-hidden="true">HEY ABİ, BİR SANİYE</small><strong>Sana bir notum var</strong></span>
+            <span class="note-arrow" aria-hidden="true">↘</span>
+          </a>
+        </div>
+      </section>
+      <div class="ticker" aria-hidden="true"><div class="ticker-track"><span>İYİ Kİ VARSIN <b>✳</b> BİRLİKTE NİCE GÜZEL YAŞLARA <b>✳</b> GOOD VIBES ONLY <b>✳</b> </span><span>İYİ Kİ VARSIN <b>✳</b> BİRLİKTE NİCE GÜZEL YAŞLARA <b>✳</b> GOOD VIBES ONLY <b>✳</b> </span></div></div>
+      <section class="letter-section" id="letter" aria-labelledby="letter-title">
+        <div class="letter-aside"><span class="eyebrow">01 / KÜÇÜK BİR NOT</span><svg aria-hidden="true"><use href="#spark"/></svg><p>Bir linke sığan<br>kocaman bir iyi ki.</p></div>
+        <div class="letter-content">
+          <h2 id="letter-title">Bazı insanlar,<br><em>iyi ki</em> dediğin yerdir.</h2>
+          <p class="salutation" data-content="salutation">Serkan Abi,</p>
+          <div id="message-paragraphs">
+            <p>Hayat bazen güzel insanları tam da karşına çıkarıyor. Sen de benim için o insanlardansın. Abi gibi abi, dost gibi dost. İyi ki yollarımız kesişmiş.</p>
+            <p>Yeni yaşın sana bol kahkaha, içinin rahat olduğu günler ve “iyi ki yapmışım” diyeceğin bir sürü an getirsin. Birlikte daha çok gülelim, daha çok güzel anı biriktirelim.</p>
+            <p>İyi ki doğdun abi. İyi ki varsın. Gerisi zaten bir şekilde çözülür. :)</p>
+          </div>
+          <div class="letter-signoff"><span data-content="signoff">Kardeşinden, sevgilerle.</span><span class="drawn-heart" aria-hidden="true">♡</span></div>
+          <p class="signature" data-content="signature">Mıstık</p>
+        </div>
+      </section>
+      <section class="memory-section" aria-labelledby="memory-title">
+        <figure class="memory-photo">
+          <div class="memory-image-wrap">
+            <img id="memory-photo" src="./assets/mangal-ekibi.jpg" alt="Sahilde mangalın etrafında birlikte oturan üçümüz" width="1800" height="1350" loading="lazy" decoding="async">
+            <p id="memory-fallback" class="memory-fallback" hidden>Birlikte daha nice güzel anılara, abi.</p>
+          </div>
+          <figcaption><span>İYİ Kİ AYNI KAREDEYİZ.</span><span aria-hidden="true">001 / ∞</span></figcaption>
+          <span class="memory-sticker" aria-hidden="true">EKİP TAMAM. ✳</span>
+        </figure>
+        <div class="memory-copy">
+          <span class="eyebrow">02 / GÜZEL ANILAR ARŞİVİ</span>
+          <svg class="memory-spark" aria-hidden="true"><use href="#spark"/></svg>
+          <h2 id="memory-title" data-content="memoryTitle">Mangal Tanrısı Serkanus Korkutus</h2>
+          <p data-content="memoryCaption">ADAMSIN ABİ</p>
+        </div>
+      </section>
+      <section class="encore" aria-labelledby="encore-title">
+        <span class="eyebrow">BU GECEYE BİR DİLEK BIRAK</span>
+        <h2 id="encore-title">Yeni yaşın, <em>güzel gelsin.</em></h2>
+        <button id="wish-button" class="button button-lime" type="button">Bir dilek tut <svg aria-hidden="true"><use href="#spark"/></svg></button>
+        <p id="wish-status">Dileğin sende kalsın. Kutlaması bizden.</p>
+        <button id="confetti-button" class="text-button encore-again" type="button">Bir tur daha kutla <span aria-hidden="true">↗</span></button>
+      </section>
+      <footer class="site-footer"><a class="brand" href="./">serkan<span class="brand-dot">.</span>exe</a><span>HER ŞEYİN EN GÜZELİ SENİN OLSUN.</span><span>MADE WITH <span class="footer-heart" aria-label="sevgi">♥</span> & A LITTLE CODE</span></footer>
+    </div>
+    <noscript><p class="noscript-note">İyi ki doğdun Serkan Abi! Animasyon ve müzik için JavaScript'i açabilirsin; mesajın tamamı burada.</p></noscript>
+  </main>
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <p class="sr-only" id="announcer" role="status" aria-live="polite" aria-atomic="true"></p>
+  <div class="toast" id="toast" role="status" hidden></div>
+</body>
+</html>
